@@ -1,0 +1,140 @@
+/* Header */
+
+
+.navbar-nav li.nav-item {
+    margin-right: 4rem;
+    font-weight: bold;
+  }
+.parent_color{
+     padding-right: 5rem;
+}
+
+.ul_center {
+text-align: center;
+}
+
+.li_center a{
+    color: rgb(91, 78, 78);
+    text-align: center;
+    padding-left: 2rem;
+}
+
+.navbar-nav li.nav-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+
+
+.flex_text{
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.copy{
+    background-color:rgba(90, 79, 79, 0.2);
+}
+
+
+/* contact */
+
+
+.forms{
+    margin-right: 8rem;
+    margin-left: 8rem;
+}
+
+.texto{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* imagen */
+
+.carousel-item .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    width: 80%;
+    height: 60%;
+  }
+  
+  .text_h3 h3{
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+  .text_h3 h3:hover {
+    background-color: rgb(63, 63, 60);
+    margin: 0 auto;
+    color: white;
+    width: 10%;
+    border-radius: 1rem;
+    transition: all 2s;
+  }
+
+
+  /* cards */
+.cardss{
+    gap: 1rem;
+}
+
+
+  @media (max-width: 768px) {
+    .cardss {
+      flex-direction: column;
+    }
+
+    .card {
+      margin-bottom: 0.9rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .cardss {
+      justify-content: center;
+    }
+
+    .card {
+      margin-right: 0.9rem;
+    }
+  }
+    
+
+/* Comment */
+
+.form_comment input{
+    display: flex;
+    justify-content: center;
+}
+.form_comment textarea{
+    display: flex;
+    justify-content: center;
+}
+.form_comment textarea{
+    padding-left:1rem;
+    width: 50%;
+}
+.form_comment input{
+    width: 50%;
+    margin: 1.5rem;
+}
+
+.btn_final{
+    margin-bottom: 2rem;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
