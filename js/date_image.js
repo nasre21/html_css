@@ -12,3 +12,39 @@ function showDate() {
   }
   
   showDate();
+
+// change imagen
+
+const image=document.getElementById("img");
+const image1=document.getElementById("img1");
+
+
+    image.addEventListener("mouseover", go);
+    image.addEventListener("mouseout", turn);
+
+    function go(){
+
+
+        image.setAttribute("src","../img/lik.jpg");
+    }
+ 
+    function turn(){
+
+        image.setAttribute("src","../img/image1.jpg");
+    }
+
+
+    image1.addEventListener("mouseover", volver);
+    image1.addEventListener("mouseout", devolver);
+
+    function volver(){
+
+
+        image1.setAttribute("src","../img/image1.jpg");
+    }
+ 
+    function devolver(){
+
+        image1.setAttribute("src","../img/lik.jpg");
+    }
+

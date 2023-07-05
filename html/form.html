@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <form id="signupForm" class="forms" action="" method="get">
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input placeholder="First name" type="text" id="form3Example1" class="form-control" required/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input placeholder="Last name" type="text" name="name" class="form-control" required/>
+            </div>
+          </div>
+        </div>
+      
+        <div class="form-outline mb-4">
+          <input placeholder="Email address" type="email" id="form3Example3" class="form-control" required/>
+        </div>
+      
+        <div class="form-outline mb-4">
+          <input placeholder="Password" type="password" id="form3Example4" class="form-control" required />
+        </div>
+      
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input" type="checkbox" id="privacyCheck" required />
+          <label class="form-check-label" for="privacyCheck">
+            Privacy Policy
+          </label>
+        </div>
+      
+        <button type="submit" id="signupButton" class="btn btn-Dark btn-block mb-4" disabled>Sign up</button>
+      </form>
+      
+
+
+
+
+
+
+
+
+
+
+<script>
+// Obtener elementos del formulario
+const form = document.getElementById("signupForm");
+const firstNameInput = document.getElementById("form3Example1");
+const lastNameInput = document.getElementsByName("name")[0];
+const emailInput = document.getElementById("form3Example3");
+const passwordInput = document.getElementById("form3Example4");
+const privacyCheck = document.getElementById("privacyCheck");
+const signupButton = document.getElementById("signupButton");
+
+// Agregar el controlador de eventos al formulario
+form.addEventListener("submit", function(event) {
+  // Validar los campos del formulario
+  if (firstNameInput.value.trim() === "") {
+    alert("Please enter your first name.");
+    event.preventDefault(); // Prevenir el envío del formulario
+    return;
+  }
+
+  if (lastNameInput.value.trim() === "") {
+    alert("Please enter your last name.");
+    event.preventDefault();
+    return;
+  }
+
+  if (emailInput.value.trim() === "") {
+    alert("Please enter your email address.");
+    event.preventDefault();
+    return;
+  }
+
+  if (passwordInput.value.trim() === "") {
+    alert("Please enter your password.");
+    event.preventDefault();
+    return;
+  }
+
+  if (!privacyCheck.checked) {
+    alert("Please accept the privacy policy.");
+    event.preventDefault();
+    return;
+  }
+
+  // Si la validación es exitosa, habilitar el botón de envío
+  signupButton.disabled = false;
+});
+
+
+
+
+</script>
+</body>
+</html>
