@@ -81,7 +81,7 @@
         <h3>Comment</h3>
       </div>
       
-      <form class="form_comment container" action="" method="get">
+      <form class="form_comment container" action="" method="get" onsubmit="return validateLogin()">
         <div class="form-outline">
           <input placeholder="Name" type="text" id="name" class="form-control" required/>
         </div>
@@ -89,7 +89,6 @@
         <div class="form-outline mb-4">
           <input placeholder="Password" type="password" id="pass" class="form-control" required/>
         </div>
-      
       
         <button id="boton" type="submit" class="btn btn-dark btn_final">Submit</button>
       </form>

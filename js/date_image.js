@@ -57,13 +57,21 @@ const loginButton = document.getElementById("boton");
 loginButton.addEventListener("click", validateLogin);
 
 function validateLogin() {
-  const loginName = document.getElementById("name").value;
-  const loginPass = document.getElementById("pass").value;
+  
+    let nombre = document.getElementById('name').value;
+    var contraseña = document.getElementById('pass').value;
 
-  if (loginName === "nasser" && loginPass === "1234") {
-    window.location.href = "https://www.zoomadrid.com/descubre-el-zoo/animales-y-continentes/animales";
-  } else {
-    alert("Usuario y contraseña incorrectos");
+    if (nombre === 'nasser' && contraseña === 'oufallah') {
+      alert('Correct Pass.');
+      window.location.href = 'https://8devmx.com/fundamentos-validacion-de-login-con-javascript/'
+
+      return true; 
+    }
+    else{
+      alert('Incorrect Pass!');
+      return false;
+    }
+    
   }
   
-}
+
