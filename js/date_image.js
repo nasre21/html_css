@@ -48,3 +48,22 @@ const image1=document.getElementById("img1");
         image1.setAttribute("src","../img/lik.jpg");
     }
 
+
+
+// validate login
+
+const loginButton = document.getElementById("boton");
+
+loginButton.addEventListener("click", validateLogin);
+
+function validateLogin() {
+  const loginName = document.getElementById("name").value;
+  const loginPass = document.getElementById("pass").value;
+
+  if (loginName === "nasser" && loginPass === "1234") {
+    window.location.href = "https://www.zoomadrid.com/descubre-el-zoo/animales-y-continentes/animales";
+  } else {
+    alert("Usuario y contraseña incorrectos");
+  }
+  
+}
