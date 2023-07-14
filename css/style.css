@@ -68,6 +68,13 @@ text-align: center;
     }
     
   }
+  @media (max-width: 931px){
+    .carousel-item .center-image {
+      
+      height: 20rem;
+    }
+    
+  }
  
   .text_h3 h3{
     text-align: center;
