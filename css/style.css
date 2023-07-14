@@ -59,9 +59,16 @@ text-align: center;
     margin-bottom: 1rem;
 
     width: 80%;
-    height: 60%;
+    height: 45rem;
   }
-  
+  @media (max-width: 549px){
+    .carousel-item .center-image {
+      width: 50%;
+      height: 13rem;
+    }
+    
+  }
+ 
   .text_h3 h3{
     text-align: center;
     padding-top:1rem;
